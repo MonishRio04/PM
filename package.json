@@ -5,12 +5,12 @@
   "homepage": "https://themewagon.github.io/nextly",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out"
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
+  "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build && next export",
+  "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start",
+  "lint": "next lint",
+  "predeploy": "npm run build",
+  "deploy": "touch out/.nojekyll && gh-pages -d out"
   },
   "repository": {
     "type": "git",
