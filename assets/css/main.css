@@ -19,10 +19,10 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #E5E1FF; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #5f687b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #10bc69; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #5340FF	; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,11 +30,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #5f687b;  /* The default color of the main navmenu links */
-  --nav-hover-color: #10bc69; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color:#5340FF	; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #5f687b; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #10bc69; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #5340FF	; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -53,7 +53,7 @@
 }
 
 .accent-background {
-  --background-color: #10bc69;
+  --background-color: #5340FF	;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #14eb83;
@@ -875,7 +875,7 @@ section,
   width: 100%;
   min-height: 70vh;
   position: relative;
-  padding: 120px 0 60px 0;
+  padding: 8px 0 60px 0;
   display: flex;
   align-items: center;
 }
@@ -975,12 +975,12 @@ section,
 --------------------------------------------------------------*/
 .featured-services {
   --surface-color: color-mix(in srgb, var(--default-color), transparent 96%);
-  padding-top: 0;
+  padding-top: 10%;
 }
 
 .featured-services .service-item {
   background-color: var(--surface-color);
-  padding: 50px 30px;
+  padding: 10px 30px;
   transition: all ease-in-out 0.4s;
   height: 100%;
 }
@@ -990,7 +990,7 @@ section,
 }
 
 .featured-services .service-item .icon i {
-  color: var(--accent-color);
+  color: #FF914D;
   font-size: 36px;
   transition: 0.3s;
 }
@@ -1002,7 +1002,7 @@ section,
 }
 
 .featured-services .service-item h4 a {
-  color: var(--heading-color);
+  color: #FF914D;
   transition: ease-in-out 0.3s;
 }
 
@@ -1087,7 +1087,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
+  background-color:#ffffff;
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 80px 20px;
@@ -1134,6 +1134,7 @@ section,
 .services .service-item:hover h3 {
   color: var(--accent-color);
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
