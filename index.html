@@ -28,14 +28,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: eNno
-  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -45,7 +37,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/PROTECHMASTERS(1).png" alt=""> 
+        <img src="assets/img/PROTECHMASTERS(1).png" alt="">
         <!-- <h1 class="sitename"></h1> -->
       </a>
 
@@ -55,7 +47,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <li><a href="#team">Team</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
           <!-- <ul> -->
           <!-- <li><a href="#">Dropdown 1</a></li> -->
@@ -86,41 +77,48 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
+    <section id="hero" class="hero section bg-white">
       <div class="container">
-        <div class="row gy-4">
+        <div class="row gy-4 align-items-center">
+
+          <!-- Left Content -->
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-            <h1>Elegant and creative solutions</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <div class="d-flex">
+            <h1>
+              Elegant and <span class="highlight">Creative</span> Solutions
+            </h1>
+            <p class="lead text-muted">
+              Protechmasters is a full-service technology and creative solutions company offering innovative software
+              development and digital design services. We help businesses bring their ideas to life with powerful,
+              user-friendly software and engaging creative content.
+            </p>
+            <div class="d-flex gap-3 mt-3">
               <a href="#about" class="btn-get-started">Get Started</a>
-              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+              <a href="#services" class="btn-learn-more">Learn More</a>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-png" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/WhatsApp_Image_2025-09-05_at_11.02.38_PM-removebg-preview.png" class="img-fluid animated" alt="Requirement Analysis Image">
+
+          <!-- Right Image -->
+          <div class="col-lg-6 order-1 order-lg-2 hero-png text-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Requirement Analysis Image">
           </div>
+
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <!-- /Hero Section -->
 
     <!-- Featured Services Section -->
     <section id="featured-services" class="featured-services section">
-
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-clipboard-check"></i></div>
               <h4><a href="" class="stretched-link">Requirement Analysis/Planning</a></h4>
               <p>Requirement Analysis is the first and most important step in the software development life cycle. At
-                this stage, we closely interact with clients to understand their goals, challenges, and expectations. We
-                gather functional and technical requirements, analyze feasibility, and create a clear roadmap to ensure
-                the final solution aligns with business needs.</p>
+                this stage, we closely interact with clients to understand their goals, challenges, and expectations.
+              </p>
             </div>
           </div><!-- End Service Item -->
 
@@ -128,204 +126,207 @@
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-code-slash"></i></div>
               <h4><a href="" class="stretched-link">Development</a></h4>
-              <p>Development is the stage where ideas and designs turn into reality through coding.
-                Our skilled developers use modern frameworks, clean coding practices, and version control
-                to build secure, scalable, and high-performance applications that meet client requirements.</p>
+              <p>Development is the stage where ideas and designs turn into reality through coding. Our skilled
+                developers use modern frameworks, clean coding practices, and version control.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-cloud-upload"></i></div>
-              <h4><a href="" class="stretched-link">Testing and Deployment </a></h4>
-              <p>Deployment is the process of releasing the finished software into production.
-                We ensure a smooth launch using automated pipelines, cloud hosting, and monitoring
-                tools, making your application available to users with minimal downtime.</p>
+              <h4><a href="" class="stretched-link">Testing and Deployment</a></h4>
+              <p>Deployment is the process of releasing the finished software into production. We ensure a smooth launch
+                using automated pipelines, cloud hosting, and monitoring tools.</p>
             </div>
           </div><!-- End Service Item -->
 
         </div>
-
       </div>
-
-    </section><!-- /Featured Services Section -->
+    </section>
+    <!-- /Featured Services Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>About Us<br></span>
-        <h2>About</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>About Protechmasters</h2>
+        <p>Innovative technology and creative solutions to help your business grow and stand out in the digital world.
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="row gy-4">
+
+          <!-- Left: Image with Video -->
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.png" class="img-fluid" alt="">
+            <img src="assets/img/about.png" class="img-fluid rounded shadow" alt="About Protechmasters">
             <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
           </div>
+
+          <!-- Right: Content -->
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-              </li>
-              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
-                  velit.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
-                  pariatur.</span></li>
-            </ul>
+            <h3>Who We Are</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              Protechmasters is a full-service technology and creative solutions company offering
+              innovative software development and digital design services. We bring your ideas to life
+              with powerful, user-friendly software and engaging creative content.
             </p>
+
+            <h4 class="mt-4">What We Do</h4>
+            <ul>
+              <li><i class="bi bi-check2-all text-primary"></i>
+                <span><b>Software Development:</b> Custom web & mobile apps, SaaS solutions, enterprise software, cloud
+                  integration, AI-driven applications.</span>
+              </li>
+              <li><i class="bi bi-check2-all text-primary"></i>
+                <span><b>Creative Design & Branding:</b> Logo design, brand identity, UI/UX design, and graphics for
+                  digital & print.</span>
+              </li>
+              <li><i class="bi bi-check2-all text-primary"></i>
+                <span><b>Photo & Video Editing:</b> Professional editing for businesses, social media, and marketing
+                  campaigns.</span>
+              </li>
+              <li><i class="bi bi-check2-all text-primary"></i>
+                <span><b>Digital Marketing Support:</b> Visual content creation that boosts brand awareness and
+                  engagement.</span>
+              </li>
+            </ul>
           </div>
         </div>
-
       </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span>Services</span>
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <section id="services" class="py-5 bg-light">
+    </section>
+    <!-- /About Section -->
+     <!-- Mission, Vision & Core Values Section -->
+<section id="mission-vision-values" class="mission-vision-values section bg-light py-5">
   <div class="container">
-    <div class="row text-center">
+    
+    <!-- Section Title -->
+    <div class="section-title text-center mb-5" data-aos="fade-up">
+      <span>Our Philosophy</span>
+      <h2>Mission, Vision & Core Values</h2>
+      <p>Guiding principles that shape everything we do at Protechmasters.</p>
+    </div>
 
-      <!-- Web Applications -->
-      <div class="col-md-4 mb-4 border border-2">
-        <div class="icon fs-1 text-primary mb-3">
-          <i class="bi bi-window-stack"></i>
-          <span class="border border-bottom-0"></span>
+    <div class="row g-4">
+
+      <!-- Mission -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-box h-100">
+          <div class="icon bg-primary"><i class="bi bi-bullseye"></i></div>
+          <h4>Our Mission</h4>
+          <p>
+            To empower businesses with modern software solutions and creative digital assets 
+            that drive growth, innovation, and customer engagement.
+          </p>
         </div>
-        <h5>Web Applications</h5>
-        <p>Custom and scalable web applications built with modern frameworks to meet business needs.</p>
       </div>
 
-      <!-- Websites -->
-      <div class="col-md-4 mb-4 border border-2">
-        <div class="icon fs-1 text-success mb-3">
-          <i class="bi bi-globe2"></i>
+      <!-- Vision -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-box h-100">
+          <div class="icon bg-success"><i class="bi bi-lightbulb"></i></div>
+          <h4>Our Vision</h4>
+          <p>
+            To be a global leader in technology and creative solutions, recognized for innovation, 
+            reliability, and excellence in helping brands succeed in the digital era.
+          </p>
         </div>
-        <h5>Websites</h5>
-        <p>Responsive and SEO-friendly websites designed to provide great user experience and performance.</p>
       </div>
 
-      <!-- Mobile Applications -->
-      <div class="col-md-4 mb-4 border border-2">
-        <div class="icon fs-1 text-warning mb-3">
-          <i class="bi bi-phone"></i>
+      <!-- Core Values -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-box h-100">
+          <div class="icon bg-warning"><i class="bi bi-gem"></i></div>
+          <h4>Our Core Values</h4>
+          <p>
+            Innovation • Creativity • Reliability • Transparency • Customer-Centric Approach
+          </p>
         </div>
-        <h5>Mobile Applications</h5>
-        <p>Cross-platform mobile apps with engaging UI/UX for Android and iOS platforms.</p>
-      </div>
-
-      <!-- Video Editing -->
-      <div class="col-md-4 mb-4 border border-2">
-        <div class="icon fs-1 text-danger mb-3">
-          <i class="bi bi-camera-reels"></i>
-        </div>
-        <h5>Video Editing</h5>
-        <p>Professional video editing services to create impactful promotional and brand content.</p>
-      </div>
-
-      <!-- Logo Design -->
-      <div class="col-md-4 mb-4 border border-2">
-        <div class="icon fs-1 text-info mb-3">
-          <i class="bi bi-palette"></i>
-        </div>
-        <h5>Logo Design</h5>
-        <p>Creative and unique logo designs that reflect your brand identity and vision.</p>
-      </div>
-
-      <!-- Thumbnail Design -->
-      <div class="col-md-4 mb-4 border border-2">
-        <div class="icon fs-1 text-secondary mb-3">
-          <i class="bi bi-image"></i>
-        </div>
-        <h5>Thumbnail Design</h5>
-        <p>Eye-catching thumbnails designed to grab attention and boost clicks on your content.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-
-        </div>
-
+    <!-- Services Section -->
+    <section id="services" class="services section py-5">
+      <!-- Section Title -->
+      <div class="container section-title text-center mb-5" data-aos="fade-up">
+        <h2 class="fw-bold">Our Services</h2>
+        <p class="text-muted">We provide creative, scalable, and professional solutions to help your business grow.</p>
       </div>
 
+      <div class="container">
+        <div class="row g-4 text-center">
+
+          <!-- Web Applications -->
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="icon bg-primary"><i class="bi bi-window-stack"></i></div>
+              <h5>Web Applications</h5>
+              <p>Custom and scalable web applications built with modern frameworks to meet business needs.</p>
+            </div>
+          </div>
+
+          <!-- Websites -->
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="icon bg-success"><i class="bi bi-globe2"></i></div>
+              <h5>Websites</h5>
+              <p>Responsive and SEO-friendly websites designed to provide great user experience and performance.</p>
+            </div>
+          </div>
+
+          <!-- Mobile Applications -->
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="icon bg-warning"><i class="bi bi-phone"></i></div>
+              <h5>Mobile Applications</h5>
+              <p>Cross-platform mobile apps with engaging UI/UX for Android and iOS platforms.</p>
+            </div>
+          </div>
+
+          <!-- Video Editing -->
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="icon bg-danger"><i class="bi bi-camera-reels"></i></div>
+              <h5>Video Editing</h5>
+              <p>Professional video editing services to create impactful promotional and brand content.</p>
+            </div>
+          </div>
+
+          <!-- Logo Design -->
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="icon bg-info"><i class="bi bi-palette"></i></div>
+              <h5>Logo Design</h5>
+              <p>Creative and unique logo designs that reflect your brand identity and vision.</p>
+            </div>
+          </div>
+
+          <!-- Thumbnail Design -->
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="icon bg-secondary"><i class="bi bi-image"></i></div>
+              <h5>Thumbnail Design</h5>
+              <p>Eye-catching thumbnails designed to grab attention and boost clicks on your content.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    </div>
+
+    </div>
+
     </section><!-- /Services Section -->
-     
+
     <!-- Portfolio Section -->
-   <section id="portfolio" class="portfolio section">
+    <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -333,13 +334,13 @@
         <!-- <h2>Portfolio</h2> -->
         <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
-                
+
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <!-- <li data-filter="*" class="filter-active">Web Applications</li> -->
+            <li data-filter="*" class="filter-active">Web Applications</li>
             <li data-filter=".filter-app">Website</li>
             <li data-filter=".filter-product">Mobile Applications</li>
             <li data-filter=".filter-branding">Video Editing</li>
@@ -622,93 +623,6 @@
       </div>
 
     </section><!-- /Testimonials Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section accent-background">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span>Section Title</span>
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
