@@ -232,9 +232,10 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
+  box-shadow: 0px 0 18px #ebf5fc;
 }
 
 .header .logo {
@@ -242,7 +243,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 56px;
   margin-right: 8px;
 }
 
@@ -1796,7 +1797,7 @@ section, .section {
 /* Hero Section */
 #hero {
   background: #fff;
-  padding: 40px 0;
+  padding: 10px 0;
   position: relative;
   overflow: hidden;
 }
@@ -1911,3 +1912,5 @@ section, .section {
   font-size: 15px;
   color: #555;
 }
+
+
