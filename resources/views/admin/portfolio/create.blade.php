@@ -11,7 +11,8 @@
             <textarea name="description" placeholder="Description" class="w-full border p-2"></textarea>
             <input type="file" name="image" class="w-full border p-2">
             <input type="url" name="link" placeholder="Project Link" class="w-full border p-2">
-
+            <input type="text" name="client_name" placeholder="Client Name" class="w-full border p-2">
+            <textarea name="short_description" placeholder="Short Description" class="w-full border p-2"></textarea>
             <button class="px-4 py-2 bg-blue-600 text-white rounded">Save</button>
         </form>
     </div>

@@ -27,6 +27,8 @@ class PortfolioController extends Controller
             'description' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             'link' => 'nullable|url',
+            'short_description' => 'nullable|string|max:500',
+            'client_name'=>'nullable|string|max:255',
         ]);
 
         if ($request->hasFile('image')) {
@@ -50,6 +52,8 @@ class PortfolioController extends Controller
             'description' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             'link' => 'nullable|url',
+            'short_description' => 'nullable|string|max:500',
+            'client_name'=>'nullable|string|max:255',
         ]);
 
         if ($request->hasFile('image')) {

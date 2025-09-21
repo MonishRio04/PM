@@ -1,7 +1,6 @@
 @extends('includes.layout')
 @section('content')
     <!-- Hero Section -->
-    <script></script>
     <section id="hero" class="hero section bg-white">
         <div class="container">
             <div class="row gy-4 align-items-center">
@@ -265,205 +264,32 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <!-- <span>Portfolio</span> -->
-            <!-- <h2>Portfolio</h2> -->
-            <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+            <span>Portfolios</span>
+            <h2>Portfolios</h2>
+            <p>Our Valuable Products – A showcase of projects we’ve built with creativity and innovation.</p>
         </div><!-- End Section Title -->
 
         <div class="container">
 
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-applications" class="">Web Applications</li>
-                    <!-- <li data-filter=".filter-sites">Website</li> -->
-                    <li data-filter=".filter-app">Mobile Applications</li>
-                    <!-- <li data-filter=".filter-branding">Video Editing</li>
-                <li data-filter=".filter-books">logo Design</li>
-                <li data-filter=".filter-books">thumbnails</li> -->
-                </ul><!-- End Portfolio Filters -->
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">               
 
                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
+                    @foreach ($portfolios as $portfolio)
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="assets/img/portfolio/Capture.JPG" class="img-fluid" alt="">
+                        <img loading="lazy" src="{{asset('storage/'.$portfolio->image)}}" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Ownpc</h4>
-                            <p>Build your dream PC with top-quality components. OwnPC.in offers processors, motherboards,
+                            <h4>{!!$portfolio->title!!}</h4>
+                            {{-- <p>Build your dream PC with top-quality components. OwnPC.in offers processors, motherboards,
                                 RAM,
-                                storage & custom build services across India.</p>
-                            <a href="assets/img/portfolio/Capture.JPG" title="App 1"
+                                storage & custom build services across India.</p> --}}
+                            <a href="{{asset('storage/'.$portfolio->image)}}" title="App 1"
                                 data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
                                     class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                            <a href="{{url("portfolio/$portfolio->id")}}" title="More Details" class="details-link"><i
                                     class="bi bi-link-45deg"></i></a>
                         </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="assets/img/portfolio/custompc.JPG" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Ownpc</h4>
-                            <p>Build Your Custom PC using pcbuilder </p>
-                            <a href="assets/img/portfolio/custompc.JPG" title="Product 1"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="assets/img/portfolio/products.JPG" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Ownpc</h4>
-                            <p>Product listing</p>
-                            <a href="assets/img/portfolio/products.JPG" title="Branding 1"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="assets/img/portfolio/pcbuilding_with_ai.JPG" class="img-fluid"
-                            alt="">
-                        <div class="portfolio-info">
-                            <h4>Ownpc</h4>
-                            <p>Build Your pc with the help of AI</p>
-                            <a href="assets/img/portfolio/pcbuilding_with_ai.JPG" title="Branding 1"
-                                data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="assets/img/portfolio/service_request.JPG" class="img-fluid"
-                            alt="">
-                        <div class="portfolio-info">
-                            <h4>Ownpc</h4>
-                            <p>Service Request form to service a PC's</p>
-                            <a href="assets/img/portfolio/service_request.JPG" title="App 2"
-                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="assets/img/portfolio/admin_dashboard.JPG" class="img-fluid"
-                            alt="">
-                        <div class="portfolio-info">
-                            <h4>Admin Panel</h4>
-                            <p>Admin dashboard with rich charts to track orders</p>
-                            <a href="assets/img/portfolio/admin_dashboard.JPG" title="Product 2"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="assets/img/portfolio/admin_products.JPG" class="img-fluid"
-                            alt="">
-                        <div class="portfolio-info">
-                            <h4>Admin Panel</h4>
-                            <p>List a Inventory Products</p>
-                            <a href="assets/img/portfolio/admin_products.JPG" title="Branding 2"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="assets/img/portfolio/admin_report.JPG" class="img-fluid"
-                            alt="">
-                        <div class="portfolio-info">
-                            <h4>Admin panel</h4>
-                            <p>High level reporting system to view a reports</p>
-                            <a href="assets/img/portfolio/admin_report.JPG" title="Branding 2"
-                                data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="assets/img/portfolio/role_management.JPG" class="img-fluid"
-                            alt="">
-                        <div class="portfolio-info">
-                            <h4>Admin Panel</h4>
-                            <p>Role Based Management (Multiple Roles System)</p>
-                            <a href="assets/img/portfolio/role_management.JPG" title="App 3"
-                                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img loading="lazy" src="assets/img/portfolio/mobile_end.JPG" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Ownpc</h4>
-                            <p>Responsive UI for mobile and Tablet Crss platform</p>
-                            <a href="assets/img/portfolio/mobile_end.JPG" title="Product 3"
-                                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img loading="lazy" src="assets/img/portfolio/mobile_custom_pc.JPG" class="img-fluid"
-                            alt="">
-                        <div class="portfolio-info">
-                            <h4>Ownpc</h4>
-                            <p>Custom Pc in Mobile</p>
-                            <a href="assets/img/portfolio/mobile_custom_pc.JPG" title="Branding 2"
-                                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <img loading="lazy" src="assets/img/portfolio/mobile_products.png" class="img-fluid"
-                            alt="">
-                        <div class="portfolio-info">
-                            <h4>Ownpc</h4>
-                            <p>Product Listing in Mobile View</p>
-                            <a href="assets/img/portfolio/mobile_products.png" title="Branding 3"
-                                data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i
-                                    class="bi bi-zoom-in"></i></a>
-                            <!--  -->
-                            <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                    class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div><!-- End Portfolio Item -->
-
+                    </div>
+                    @endforeach
                 </div><!-- End Portfolio Container -->
 
             </div>
