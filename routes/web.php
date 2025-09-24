@@ -17,7 +17,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 });
 Route::get('/portfolio-image/{filename}', function ($filename) {
     $path = storage_path('app/public/'.$filename);
-
+    dd(file_exists($path),$path);
     if (!file_exists($path)) {
         abort(404);
     }

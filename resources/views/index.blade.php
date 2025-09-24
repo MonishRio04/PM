@@ -276,13 +276,13 @@
                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
                     @foreach ($portfolios as $portfolio)
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-applications">
-                        <img loading="lazy" src="{{url('portfolio-image/'.$portfolio->image)}}" class="img-fluid" alt="">
+                        <img loading="lazy" src="{{asset($portfolio->image)}}" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>{!!$portfolio->title!!}</h4>
                             {{-- <p>Build your dream PC with top-quality components. OwnPC.in offers processors, motherboards,
                                 RAM,
                                 storage & custom build services across India.</p> --}}
-                            <a href="{{storage_path('app/public/'.$portfolio->image)}}" title="App 1"
+                            <a href="{{asset($portfolio->image)}}" title="App 1"
                                 data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
                                     class="bi bi-zoom-in"></i></a>
                             <a href="{{url("portfolio/$portfolio->id")}}" title="More Details" class="details-link"><i

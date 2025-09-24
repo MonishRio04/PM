@@ -37,22 +37,22 @@
                         <div class="swiper-wrapper align-items-center">
 
                             <div class="swiper-slide">
-                                <img loading="lazy" src="{{ storage_path('app/public/' . $portfolio->image) }}"
+                                <img loading="lazy" src="{{ asset($portfolio->image) }}"
                                     alt="">
                             </div>
 
                             <div class="swiper-slide">
-                                <img loading="lazy" src="{{ storage_path('app/public/' . $portfolio->image) }}"
+                                <img loading="lazy" src="{{ asset($portfolio->image) }}"
                                     alt="">
                             </div>
 
                             <div class="swiper-slide">
-                                <img loading="lazy" src="{{ storage_path('app/public/' . $portfolio->image) }}"
+                                <img loading="lazy" src="{{ asset($portfolio->image) }}"
                                     alt="">
                             </div>
 
                             <div class="swiper-slide">
-                                <img loading="lazy" src="{{ storage_path('app/public/' . $portfolio->image) }}"
+                                <img loading="lazy" src="{{ asset($portfolio->image) }}"
                                     alt="">
                             </div>
 

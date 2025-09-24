@@ -32,7 +32,10 @@ class PortfolioController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('portfolios', 'public');
+            $file     = $request->file('image');
+            $filename = time().'_'.$file->getClientOriginalName();
+            $file->move(public_path('portfolios'), $filename);
+            $data['image'] = 'portfolios/'.$filename;
         }
 
         Portfolio::create($data);
@@ -57,12 +60,14 @@ class PortfolioController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            if ($portfolio->image) {
-                Storage::disk('public')->delete($portfolio->image);
+            if ($portfolio->image && file_exists(public_path($portfolio->image))) {
+                unlink(public_path($portfolio->image));
             }
-            $data['image'] = $request->file('image')->store('portfolios', 'public');
+            $file     = $request->file('image');
+            $filename = time().'_'.$file->getClientOriginalName();
+            $file->move(public_path('portfolios'), $filename);
+            $data['image'] = 'portfolios/'.$filename;
         }
-
         $portfolio->update($data);
 
         return redirect()->route('portfolios.index')->with('success', 'Portfolio updated successfully.');
