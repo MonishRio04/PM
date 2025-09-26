@@ -232,7 +232,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
   -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -240,6 +240,7 @@ h6 {
   box-shadow: 0 8px 6px -6px #999;
 
  
+  box-shadow: 0px 0 18px #ebf5fc;
 }
 
 .header .logo {
@@ -247,7 +248,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 56px;
   margin-right: 8px;
 }
 
@@ -1807,7 +1808,7 @@ section, .section {
 /* Hero Section */
 #hero {
   background: #fff;
-  padding: 40px 0;
+  padding: 10px 0;
   position: relative;
   overflow: hidden;
 }
@@ -1921,4 +1922,9 @@ section, .section {
 .mission-vision-values p {
   font-size: 15px;
   color: #555;
+}
+
+
+.isotope-container .img-fluid{
+  max-height:550px !important;
 }
