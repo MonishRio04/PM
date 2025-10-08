@@ -16,7 +16,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::resource('portfolios', PortfolioController::class);
     Route::get('logout', [AdminController::class, 'logout'])->name('logout');
 });
-Route::any('contact-us',function(){
-    Log::info("contact-us".json_encode(request()->all()));
-    return true;
+Route::any('contact-us', function () {
+    Log::info("contact-us" . json_encode(request()->all()));
+    return response('ok', 200)
+        ->header('Content-Type', 'text/plain');
 });
