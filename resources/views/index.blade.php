@@ -466,7 +466,7 @@
                 </div>
 
                 <div class="col-lg-7">
-                    <form action="{{url('contact-us')}}">
+                    <form action="{{url('contact-us')}}"  class="php-email-form" >
                         <div class="row gy-4">
 
                             <div class="col-md-6">
