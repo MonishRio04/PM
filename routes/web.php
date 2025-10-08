@@ -18,5 +18,5 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 });
 Route::any('contact-us',function(){
     Log::info("contact-us".json_encode(request()->all()));
-    return redirect()->back();
+    return true;
 });
