@@ -17,6 +17,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('logout', [AdminController::class, 'logout'])->name('logout');
 });
 Route::any('contact-us',function(){
-    Log::info("contact-us".request()->all());
+    Log::info("contact-us".json_encode(request()->all()));
     return redirect()->back();
 });
