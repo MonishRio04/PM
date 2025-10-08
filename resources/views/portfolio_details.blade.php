@@ -67,7 +67,7 @@
                             <li><strong>Title</strong>: {!! $portfolio->title !!}</li>
                             <li><strong>Client</strong>: {!! $portfolio->client_name !!}</li>
                             @if ($portfolio?->link)
-                                <li><strong>Project URL</strong>: <a href="#">{{ $portfolio?->link }}</a></li>
+                                <li><strong>Project URL</strong>: <a href="{{ $portfolio?->link }}">{{ $portfolio?->link }}</a></li>
                             @endif
                         </ul>
                     </div>
