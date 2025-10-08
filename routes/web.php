@@ -18,6 +18,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 });
 Route::any('contact-us', function () {
     Log::info("contact-us" . json_encode(request()->all()));
-    return response('ok', 200)
+    return response('OK', 200)
         ->header('Content-Type', 'text/plain');
 });
