@@ -466,8 +466,7 @@
                 </div>
 
                 <div class="col-lg-7">
-                    <form action="{{url('contact-us')}}" method="post" class="php-email-form" data-aos="fade-up"
-                        data-aos-delay="200">
+                    <form action="{{url('contact-us')}}">
                         <div class="row gy-4">
 
                             <div class="col-md-6">
@@ -500,7 +499,6 @@
 
                                 <button type="submit">Send Message</button>
                             </div>
-
                         </div>
                     </form>
                 </div><!-- End Contact Form -->

@@ -20,12 +20,3 @@ Route::get('contact-us',function(){
     Log::info("contact-us".request()->all());
     return redirect()->back();
 });
-Route::get('/portfolio-image/{filename}', function ($filename) {
-    $path = storage_path('app/public/'.$filename);
-    dd(file_exists($path),$path);
-    if (!file_exists($path)) {
-        abort(404);
-    }
-
-    return response()->file($path);
-});
