@@ -16,7 +16,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::resource('portfolios', PortfolioController::class);
     Route::get('logout', [AdminController::class, 'logout'])->name('logout');
 });
-Route::get('contact-us',function(){
+Route::any('contact-us',function(){
     Log::info("contact-us".request()->all());
     return redirect()->back();
 });

@@ -468,7 +468,7 @@
                 <div class="col-lg-7">
                     <form action="{{url('contact-us')}}"  class="php-email-form" >
                         <div class="row gy-4">
-
+                            @csrf
                             <div class="col-md-6">
                                 <label for="name-field" class="pb-2">Your Name</label>
                                 <input type="text" name="name" id="name-field" class="form-control"
